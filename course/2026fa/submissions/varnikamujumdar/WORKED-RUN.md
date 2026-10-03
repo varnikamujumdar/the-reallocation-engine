@@ -184,7 +184,7 @@ Add a human-confirmed alias file (`fixtures/aliases.json`, mapping "Notion" → 
 - Very long target lists (the whole CSV) or non-ASCII company names.
 - Whether the 90 / 60 / 90-day OPT constants are correct. Not checked against USCIS.
 - A run on Python 3.12 (CI's version); only 3.9.6 was used here.
-- A run from a clean checkout of the branch (pending the first commit; see TEST-REPORT.md).
+- (Since done: a run from a clean clone of the pushed branch at `052820b` gave the same results; see TEST-REPORT.md.)
 
 ### Broke during testing, fixed
 - **OPT filing date not checked** (found by an independent AI review). A filing date of 2027-05-01, four months after graduation, still gave timeline 1.0 and Apply. Fixed with a filing-window check in `validate_timeline`, two tests, and a break fixture.

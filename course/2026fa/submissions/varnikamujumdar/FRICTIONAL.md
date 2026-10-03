@@ -63,4 +63,5 @@ This is the honest record of how this assignment was actually done: what was tri
 - Run outputs: `course/2026fa/submissions/varnikamujumdar/runs/2026-10-03/`
 - Tests: `scripts/contrib/2026fa/varnikamujumdar-swe-newgrad-sponsors/test_sponsor_shortlist.py`
 - Break attempts and hand check: `WORKED-RUN.md` §Verification
-- Commits: *[add the commit SHA(s) after committing]*
+- Commits, in order: `3e8cbe8` setup log + change brief · `b3db05f` recipe + card · `19f5da0` prototype, tests, fixtures · `bbb7ddf` run outputs · `78328fe` run log · `052820b` write-ups. A final commit adds the clean-checkout results (see `git log`).
+- Clean-checkout run and branch-history PII scan: `TEST-REPORT.md` §Clean-checkout run

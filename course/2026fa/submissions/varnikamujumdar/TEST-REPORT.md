@@ -2,7 +2,7 @@
 
 ## Executive summary
 
-This report records whether the tool actually runs and whether it breaks safely. Before anything was built, the repo's own health checks failed on a fresh laptop for three setup reasons, all fixed with one install command each. After the build, the checks pass, the tool runs on the real data, all 22 offline tests pass, and every named failure case stops with a clear message without writing anything. One required step is **not yet done**: running everything again from a clean checkout of the committed branch. It has to wait for the first commit.
+This report records whether the tool actually runs and whether it breaks safely. Before anything was built, the repo's own health checks failed on a fresh laptop for three setup reasons, all fixed with one install command each. After the build, the checks pass, the tool runs on the real data, all 22 offline tests pass, and every named failure case stops with a clear message without writing anything. Everything was also re-run from a fresh clone of the pushed branch, with the same results, and the branch-history privacy scan that CI runs came back clean.
 
 ## Toolchain baseline
 
@@ -77,7 +77,7 @@ The tests use only `fixtures/mini_80days.csv` (7 invented rows) and call the rea
 
 The exact commands and terminal output for every break are in `WORKED-RUN.md` §Verification.
 
-## Files changed (`git status`, before the first commit)
+## Files changed
 
 Every path is inside my namespaces. No tracked file is modified.
 
@@ -91,21 +91,71 @@ Every path is inside my namespaces. No tracked file is modified.
           (sponsor_shortlist.py, test_sponsor_shortlist.py, README.md, fixtures/ ×3, fixtures/breaks/ ×4)
 ```
 
-`git diff --stat` against `main` after committing: *[paste here after the first commit]*
+`git diff --stat origin/main...HEAD` in the clean clone (commit `052820b`) ends with `32 files changed, 4515 insertions(+)`, with no deletions and no file outside the four namespaces above. Full output below.
 
-## Clean-checkout run — PENDING
+## Clean-checkout run
 
-Not yet done. After committing and pushing, run:
+Run on 2026-10-03 by the AI assistant: a fresh `git clone` of `contrib/2026fa-varnikamujumdar-swe-newgrad-sponsors` from GitHub into an empty scratch folder, at HEAD `052820b68d839863472e46104582dbb8e9e91017`. (PyYAML was already installed for the user account from setup, so `verify` didn't hit the `yaml` error here.)
 
-```bash
-cd /tmp && rm -rf tre-clean && git clone -b contrib/2026fa-varnikamujumdar-swe-newgrad-sponsors https://github.com/varnikamujumdar/the-reallocation-engine.git tre-clean && cd tre-clean
-npm install && npm run doctor && npm run verify
-python3 scripts/contrib/2026fa/varnikamujumdar-swe-newgrad-sponsors/test_sponsor_shortlist.py
-python3 scripts/contrib/2026fa/varnikamujumdar-swe-newgrad-sponsors/sponsor_shortlist.py --persona scripts/contrib/2026fa/varnikamujumdar-swe-newgrad-sponsors/fixtures/persona.bella.json --targets scripts/contrib/2026fa/varnikamujumdar-swe-newgrad-sponsors/fixtures/targets.bella.json
-git diff --stat origin/main...HEAD
+```
+$ npm run doctor
+  ✓ no private/PII paths are tracked
+  environment: ✓ runnable
+$ npm run verify
+conformance: 169 files (88 md · 38 py · 30 js · 9 json · 4 sh)
+✓ all conform (machine half of P4). Adequacy is still the human gate.
+✓ manifest check passed (3 warnings)
+$ python3 scripts/contrib/2026fa/varnikamujumdar-swe-newgrad-sponsors/test_sponsor_shortlist.py
+Ran 22 tests in 0.097s
+
+OK
+$ python3 scripts/contrib/2026fa/varnikamujumdar-swe-newgrad-sponsors/sponsor_shortlist.py --persona scripts/contrib/2026fa/varnikamujumdar-swe-newgrad-sponsors/fixtures/persona.bella.json --targets scripts/contrib/2026fa/varnikamujumdar-swe-newgrad-sponsors/fixtures/targets.bella.json
+✓ scored 12 roles → Apply 3 · Consider 3 · Skip 6 (skip 50%)
+  course/2026fa/submissions/varnikamujumdar/runs/2026-10-03-2/role-scores.json  +  course/2026fa/submissions/varnikamujumdar/runs/2026-10-03-2/role-scores.md
+✓ tiers [your-input rule on record data]: Likely 3 · None 1 · Proven 3 · Unknown 5
+✓ timeline factor [your-input] 1.0 · liveness UNCHECKED (human gate)
+  course/2026fa/submissions/varnikamujumdar/runs/2026-10-03-2/report.md  +  run.json
+exit=0
+$ git diff --stat origin/main...HEAD
+ .../submissions/varnikamujumdar/CHANGE-BRIEF.md    | 109 +++++
+ .../submissions/varnikamujumdar/FRICTIONAL.md      |  66 +++
+ .../submissions/varnikamujumdar/JUSTIFICATION.md   |  42 ++
+ .../submissions/varnikamujumdar/SETUP-LOG.md       |  57 +++
+ .../2026fa/submissions/varnikamujumdar/SOURCES.md  |  59 +++
+ .../submissions/varnikamujumdar/TEST-REPORT.md     | 114 +++++
+ .../submissions/varnikamujumdar/WORKED-RUN.md      | 196 ++++++++
+ .../runs/2026-10-03-slow-hiring/report.md          |  64 +++
+ .../runs/2026-10-03-slow-hiring/role-scores.json   | 415 ++++++++++++++++
+ .../runs/2026-10-03-slow-hiring/role-scores.md     |  22 +
+ .../runs/2026-10-03-slow-hiring/roles.json         | 237 +++++++++
+ .../runs/2026-10-03-slow-hiring/run.json           | 528 +++++++++++++++++++++
+ .../varnikamujumdar/runs/2026-10-03/report.md      |  64 +++
+ .../runs/2026-10-03/role-scores.json               | 415 ++++++++++++++++
+ .../varnikamujumdar/runs/2026-10-03/role-scores.md |  22 +
+ .../varnikamujumdar/runs/2026-10-03/roles.json     | 237 +++++++++
+ .../varnikamujumdar/runs/2026-10-03/run.json       | 528 +++++++++++++++++++++
+ .../varnikamujumdar/runs/role-scores.json          | 241 ++++++++++
+ .../varnikamujumdar/runs/role-scores.md            |  15 +
+ logs/runs/2026fa-varnikamujumdar-1.md              |   8 +
+ .../varnikamujumdar-swe-newgrad-sponsors.card.md   |  72 +++
+ .../2026fa/varnikamujumdar-swe-newgrad-sponsors.md | 145 ++++++
+ .../varnikamujumdar-swe-newgrad-sponsors/README.md |  59 +++
+ .../fixtures/breaks/persona.bad-date.json          |  21 +
+ .../fixtures/breaks/persona.late-filing.json       |  21 +
+ .../fixtures/breaks/persona.slow-hiring.json       |  21 +
+ .../fixtures/breaks/persona.window-closed.json     |  21 +
+ .../fixtures/mini_80days.csv                       |   8 +
+ .../fixtures/persona.bella.json                    |  21 +
+ .../fixtures/targets.bella.json                    |  14 +
+ .../sponsor_shortlist.py                           | 487 +++++++++++++++++++
+ .../test_sponsor_shortlist.py                      | 186 ++++++++
+ 32 files changed, 4515 insertions(+)
+$ node scripts/pii-scan.mjs --diff origin/main
+pii-scan: clean ✓
+exit=0
 ```
 
-*[paste the output here]*
+Note what the clean run shows: the clone already contained the committed `runs/2026-10-03/`, so the tool wrote to `runs/2026-10-03-2/` instead of overwriting it. That's the no-overwrite rule working on a real checkout. Still **not tested:** Python 3.12, which CI uses; the clone ran on 3.9.6.
 
 ## What the gates require a human to judge
 
