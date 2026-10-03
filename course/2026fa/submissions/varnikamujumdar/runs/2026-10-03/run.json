@@ -1,0 +1,528 @@
+{
+  "_tool": "varnikamujumdar-swe-newgrad-sponsors/sponsor_shortlist.py",
+  "_recipe": "recipes/cases/2026fa/varnikamujumdar-swe-newgrad-sponsors.md",
+  "generated": "2026-10-03",
+  "_out_dir": "course/2026fa/submissions/varnikamujumdar/runs/2026-10-03",
+  "persona": {
+    "name": "Bella",
+    "source": "your-input"
+  },
+  "soc": "15-1252",
+  "inputs": {
+    "csv": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv",
+    "csv_sha256": "eccdee2addf472b1639269f42eec693b083b7ce251347d5fd0b2856cfdae6270",
+    "csv_rows": 30369,
+    "persona": "scripts/contrib/2026fa/varnikamujumdar-swe-newgrad-sponsors/fixtures/persona.bella.json",
+    "targets": "scripts/contrib/2026fa/varnikamujumdar-swe-newgrad-sponsors/fixtures/targets.bella.json",
+    "scorer": "scripts/score/role-scorer.mjs"
+  },
+  "tier_rule": {
+    "proven_min_approvals": 10,
+    "proven_min_rate": 90.0,
+    "p": {
+      "Proven": 0.9,
+      "Likely": 0.6,
+      "None": 0.0
+    },
+    "source": "your-input"
+  },
+  "senior_title_regex": "\\b(senior|sr|staff|principal|lead|manager|director|architect|head|vp|ii|iii|iv)\\b",
+  "timeline": {
+    "as_of": "2026-10-03",
+    "program_end": "2026-12-23",
+    "opt_requested_start": "2026-12-24",
+    "opt_filed": "2026-10-15",
+    "ead_wait_days": 90,
+    "hiring_lag_days": 56,
+    "opt_filing_window_before_days": 90,
+    "opt_start_window_days": 60,
+    "unemployment_limit_days": 90,
+    "factor": 1.0,
+    "source": "your-input",
+    "ead_ready_estimate": "2027-01-13",
+    "unemployment_clock_start_estimate": "2027-01-13",
+    "earliest_work_start_estimate": "2027-01-13",
+    "unemployment_days_used_estimate": 0,
+    "opt_filed_assumed": null,
+    "filing_window": [
+      "2026-09-24",
+      "2027-02-21"
+    ],
+    "formula": "max(0, 1 - days_used / unemployment_limit_days) [your-input design choice]"
+  },
+  "liveness": {
+    "status": "UNCHECKED",
+    "factor_sent": 1.0,
+    "source": "your-input",
+    "human_gate": "npm run ats:liveness -- <posting url> before any Apply"
+  },
+  "soc_context": {
+    "status": "ok",
+    "title": "Software Developers",
+    "annual_median_wage": "133080.0",
+    "oews_year": "2024",
+    "source": "record"
+  },
+  "companies": [
+    {
+      "typed": "Stripe",
+      "csv_name": "STRIPE INC",
+      "match": {
+        "status": "matched",
+        "possible_matches": [],
+        "source": "record",
+        "possible_matches_used": false
+      },
+      "labels": {
+        "raw": "record",
+        "tier": "your-input rule on record fields",
+        "p": "your-input",
+        "flags": "record"
+      },
+      "sponsorship": {
+        "tier": "Proven",
+        "p": 0.9,
+        "flags": [],
+        "software_titles": [
+          "Software Engineer"
+        ],
+        "entry_titles": [
+          "Software Engineer"
+        ],
+        "raw": {
+          "company_name": "STRIPE INC",
+          "state": "CA",
+          "Total Approvals": "1250.0",
+          "Total Denials": "22.0",
+          "Approval_Rate": "98.27044025157232",
+          "top_job_titles_sponsored": "['Software Engineer', 'Backend Engineer', 'Risk Strategist', 'Product Manager', 'Engineering Manager']",
+          "latest_funding_date": "2024-04-08"
+        }
+      },
+      "role_id": "stripe",
+      "composite": 0.315,
+      "recommendation": "Apply",
+      "scorer_reason": "composite 0.315 \u2265 0.3, gates healthy",
+      "next_action": "BLOCKED until liveness: run `npm run ats:liveness -- <posting url>`; if active, tailor the application (2-hour block)"
+    },
+    {
+      "typed": "Figma",
+      "csv_name": "FIGMA INC",
+      "match": {
+        "status": "matched",
+        "possible_matches": [],
+        "source": "record",
+        "possible_matches_used": false
+      },
+      "labels": {
+        "raw": "record",
+        "tier": "your-input rule on record fields",
+        "p": "your-input",
+        "flags": "record"
+      },
+      "sponsorship": {
+        "tier": "Proven",
+        "p": 0.9,
+        "flags": [],
+        "software_titles": [
+          "Software Engineer",
+          "Software Engineer - Infrastructure"
+        ],
+        "entry_titles": [
+          "Software Engineer",
+          "Software Engineer - Infrastructure"
+        ],
+        "raw": {
+          "company_name": "FIGMA INC",
+          "state": "CA",
+          "Total Approvals": "188.0",
+          "Total Denials": "2.0",
+          "Approval_Rate": "98.94736842105264",
+          "top_job_titles_sponsored": "['Software Engineer', 'Account Manager, Enterprise', 'Software Engineer - Infrastructure', 'Motion Designer, Brand Studio', 'Data Scientist, Product Analytics']",
+          "latest_funding_date": "2024-05-15"
+        }
+      },
+      "role_id": "figma",
+      "composite": 0.315,
+      "recommendation": "Apply",
+      "scorer_reason": "composite 0.315 \u2265 0.3, gates healthy",
+      "next_action": "BLOCKED until liveness: run `npm run ats:liveness -- <posting url>`; if active, tailor the application (2-hour block)"
+    },
+    {
+      "typed": "Notion",
+      "csv_name": null,
+      "match": {
+        "status": "not-in-csv",
+        "possible_matches": [
+          "NOTION LABS INC",
+          "NOTIONAL FINANCE INC"
+        ],
+        "source": "record",
+        "possible_matches_used": false
+      },
+      "labels": {
+        "raw": "record",
+        "tier": "your-input rule on record fields",
+        "p": "your-input",
+        "flags": "record"
+      },
+      "sponsorship": {
+        "tier": "Unknown",
+        "p": null,
+        "software_titles": [],
+        "entry_titles": [],
+        "raw": null,
+        "flags": [
+          "no unique CSV row (not-in-csv)"
+        ]
+      },
+      "role_id": "notion",
+      "composite": 0,
+      "recommendation": "Skip",
+      "scorer_reason": "composite 0.000 < 0.2 \u2014 time is better spent elsewhere",
+      "next_action": "No H-1B record. That is NOT evidence they don't sponsor; check possible matches or ask a contact before dropping"
+    },
+    {
+      "typed": "Datadog",
+      "csv_name": "DATADOG INC",
+      "match": {
+        "status": "matched",
+        "possible_matches": [],
+        "source": "record",
+        "possible_matches_used": false
+      },
+      "labels": {
+        "raw": "record",
+        "tier": "your-input rule on record fields",
+        "p": "your-input",
+        "flags": "record"
+      },
+      "sponsorship": {
+        "tier": "Proven",
+        "p": 0.9,
+        "flags": [],
+        "software_titles": [
+          "Software Engineer II",
+          "Senior Software Engineer",
+          "Software Engineer"
+        ],
+        "entry_titles": [
+          "Software Engineer"
+        ],
+        "raw": {
+          "company_name": "DATADOG INC",
+          "state": "NY",
+          "Total Approvals": "340.0",
+          "Total Denials": "0.0",
+          "Approval_Rate": "100.0",
+          "top_job_titles_sponsored": "['Software Engineer II', 'Senior Software Engineer', 'Software Engineer', 'Privacy Counsel', 'PRODUCT MANAGER']",
+          "latest_funding_date": "2015-12-28"
+        }
+      },
+      "role_id": "datadog",
+      "composite": 0.315,
+      "recommendation": "Apply",
+      "scorer_reason": "composite 0.315 \u2265 0.3, gates healthy",
+      "next_action": "BLOCKED until liveness: run `npm run ats:liveness -- <posting url>`; if active, tailor the application (2-hour block)"
+    },
+    {
+      "typed": "Klaviyo",
+      "csv_name": "KLAVIYO INC",
+      "match": {
+        "status": "matched",
+        "possible_matches": [],
+        "source": "record",
+        "possible_matches_used": false
+      },
+      "labels": {
+        "raw": "record",
+        "tier": "your-input rule on record fields",
+        "p": "your-input",
+        "flags": "record"
+      },
+      "sponsorship": {
+        "tier": "Likely",
+        "p": 0.6,
+        "flags": [
+          "senior-only software sponsorship history"
+        ],
+        "software_titles": [
+          "Software Engineer II",
+          "Senior Software Engineer"
+        ],
+        "entry_titles": [],
+        "raw": {
+          "company_name": "KLAVIYO INC",
+          "state": "MA",
+          "Total Approvals": "154.0",
+          "Total Denials": "4.0",
+          "Approval_Rate": "97.46835443037976",
+          "top_job_titles_sponsored": "['Business Intelligence Engineer', 'Software Engineer II', 'Engineering Manager Data Exchange', 'Engineering Manager II- SMS', 'Senior Software Engineer']",
+          "latest_funding_date": "2022-07-26"
+        }
+      },
+      "role_id": "klaviyo",
+      "composite": 0.21,
+      "recommendation": "Consider",
+      "scorer_reason": "composite 0.210 in the Consider band [0.2, 0.3)",
+      "next_action": "Network in first (3-hour block): ask whether they sponsor *new-grad* SWE roles"
+    },
+    {
+      "typed": "1upHealth",
+      "csv_name": "1UPHEALTH INC",
+      "match": {
+        "status": "matched",
+        "possible_matches": [],
+        "source": "record",
+        "possible_matches_used": false
+      },
+      "labels": {
+        "raw": "record",
+        "tier": "your-input rule on record fields",
+        "p": "your-input",
+        "flags": "record"
+      },
+      "sponsorship": {
+        "tier": "Likely",
+        "p": 0.6,
+        "flags": [
+          "senior-only software sponsorship history"
+        ],
+        "software_titles": [
+          "Senior Software Engineer"
+        ],
+        "entry_titles": [],
+        "raw": {
+          "company_name": "1UPHEALTH INC",
+          "state": "MA",
+          "Total Approvals": "12.0",
+          "Total Denials": "0.0",
+          "Approval_Rate": "100.0",
+          "top_job_titles_sponsored": "['Senior Software Engineer']",
+          "latest_funding_date": "2023-04-03"
+        }
+      },
+      "role_id": "1uphealth",
+      "composite": 0.21,
+      "recommendation": "Consider",
+      "scorer_reason": "composite 0.210 in the Consider band [0.2, 0.3)",
+      "next_action": "Network in first (3-hour block): ask whether they sponsor *new-grad* SWE roles"
+    },
+    {
+      "typed": "6sense",
+      "csv_name": null,
+      "match": {
+        "status": "not-in-csv",
+        "possible_matches": [
+          "6SENSE INSIGHTS INC"
+        ],
+        "source": "record",
+        "possible_matches_used": false
+      },
+      "labels": {
+        "raw": "record",
+        "tier": "your-input rule on record fields",
+        "p": "your-input",
+        "flags": "record"
+      },
+      "sponsorship": {
+        "tier": "Unknown",
+        "p": null,
+        "software_titles": [],
+        "entry_titles": [],
+        "raw": null,
+        "flags": [
+          "no unique CSV row (not-in-csv)"
+        ]
+      },
+      "role_id": "6sense",
+      "composite": 0,
+      "recommendation": "Skip",
+      "scorer_reason": "composite 0.000 < 0.2 \u2014 time is better spent elsewhere",
+      "next_action": "No H-1B record. That is NOT evidence they don't sponsor; check possible matches or ask a contact before dropping"
+    },
+    {
+      "typed": "DraftKings",
+      "csv_name": "DRAFTKINGS INC",
+      "match": {
+        "status": "matched",
+        "possible_matches": [],
+        "source": "record",
+        "possible_matches_used": false
+      },
+      "labels": {
+        "raw": "record",
+        "tier": "your-input rule on record fields",
+        "p": "your-input",
+        "flags": "record"
+      },
+      "sponsorship": {
+        "tier": "Unknown",
+        "p": null,
+        "flags": [
+          "H-1B columns blank in CSV"
+        ],
+        "software_titles": [],
+        "entry_titles": [],
+        "raw": {
+          "company_name": "DRAFTKINGS INC",
+          "state": "MA",
+          "Total Approvals": "",
+          "Total Denials": "",
+          "Approval_Rate": "",
+          "top_job_titles_sponsored": "",
+          "latest_funding_date": "2024-12-03"
+        }
+      },
+      "role_id": "draftkings",
+      "composite": 0,
+      "recommendation": "Skip",
+      "scorer_reason": "composite 0.000 < 0.2 \u2014 time is better spent elsewhere",
+      "next_action": "No H-1B record. That is NOT evidence they don't sponsor; check possible matches or ask a contact before dropping"
+    },
+    {
+      "typed": "HubSpot",
+      "csv_name": null,
+      "match": {
+        "status": "not-in-csv",
+        "possible_matches": [],
+        "source": "record",
+        "possible_matches_used": false
+      },
+      "labels": {
+        "raw": "record",
+        "tier": "your-input rule on record fields",
+        "p": "your-input",
+        "flags": "record"
+      },
+      "sponsorship": {
+        "tier": "Unknown",
+        "p": null,
+        "software_titles": [],
+        "entry_titles": [],
+        "raw": null,
+        "flags": [
+          "no unique CSV row (not-in-csv)"
+        ]
+      },
+      "role_id": "hubspot",
+      "composite": 0,
+      "recommendation": "Skip",
+      "scorer_reason": "composite 0.000 < 0.2 \u2014 time is better spent elsewhere",
+      "next_action": "No H-1B record. That is NOT evidence they don't sponsor; check possible matches or ask a contact before dropping"
+    },
+    {
+      "typed": "Wayfair",
+      "csv_name": null,
+      "match": {
+        "status": "not-in-csv",
+        "possible_matches": [],
+        "source": "record",
+        "possible_matches_used": false
+      },
+      "labels": {
+        "raw": "record",
+        "tier": "your-input rule on record fields",
+        "p": "your-input",
+        "flags": "record"
+      },
+      "sponsorship": {
+        "tier": "Unknown",
+        "p": null,
+        "software_titles": [],
+        "entry_titles": [],
+        "raw": null,
+        "flags": [
+          "no unique CSV row (not-in-csv)"
+        ]
+      },
+      "role_id": "wayfair",
+      "composite": 0,
+      "recommendation": "Skip",
+      "scorer_reason": "composite 0.000 < 0.2 \u2014 time is better spent elsewhere",
+      "next_action": "No H-1B record. That is NOT evidence they don't sponsor; check possible matches or ask a contact before dropping"
+    },
+    {
+      "typed": "Braze",
+      "csv_name": "BRAZE INC",
+      "match": {
+        "status": "matched",
+        "possible_matches": [],
+        "source": "record",
+        "possible_matches_used": false
+      },
+      "labels": {
+        "raw": "record",
+        "tier": "your-input rule on record fields",
+        "p": "your-input",
+        "flags": "record"
+      },
+      "sponsorship": {
+        "tier": "Likely",
+        "p": 0.6,
+        "flags": [
+          "sponsors, but no software title in its top sponsored titles"
+        ],
+        "software_titles": [],
+        "entry_titles": [],
+        "raw": {
+          "company_name": "BRAZE INC",
+          "state": "NY",
+          "Total Approvals": "50.0",
+          "Total Denials": "2.0",
+          "Approval_Rate": "96.15384615384616",
+          "top_job_titles_sponsored": "['Financial Systems Engineering Manager']",
+          "latest_funding_date": "2025-03-26"
+        }
+      },
+      "role_id": "braze",
+      "composite": 0.21,
+      "recommendation": "Consider",
+      "scorer_reason": "composite 0.210 in the Consider band [0.2, 0.3)",
+      "next_action": "Network in first (3-hour block): ask whether they sponsor *new-grad* SWE roles"
+    },
+    {
+      "typed": "Mobilio",
+      "csv_name": "MOBILIO LLC",
+      "match": {
+        "status": "matched",
+        "possible_matches": [],
+        "source": "record",
+        "possible_matches_used": false
+      },
+      "labels": {
+        "raw": "record",
+        "tier": "your-input rule on record fields",
+        "p": "your-input",
+        "flags": "record"
+      },
+      "sponsorship": {
+        "tier": "None",
+        "p": 0.0,
+        "flags": [
+          "0 approvals, 2.0 denials on record"
+        ],
+        "software_titles": [
+          "Software Engineer"
+        ],
+        "entry_titles": [
+          "Software Engineer"
+        ],
+        "raw": {
+          "company_name": "MOBILIO LLC",
+          "state": "CA",
+          "Total Approvals": "0.0",
+          "Total Denials": "2.0",
+          "Approval_Rate": "0.0",
+          "top_job_titles_sponsored": "['Software Engineer']",
+          "latest_funding_date": "2014-01-31"
+        }
+      },
+      "role_id": "mobilio",
+      "composite": 0,
+      "recommendation": "Skip",
+      "scorer_reason": "composite 0.000 < 0.2 \u2014 time is better spent elsewhere",
+      "next_action": "Skip"
+    }
+  ]
+}

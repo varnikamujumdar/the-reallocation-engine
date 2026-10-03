@@ -1,0 +1,415 @@
+{
+  "_scorer": "bayesian-role-scorer",
+  "_chapter": 11,
+  "generated": "2026-10-03",
+  "config": {
+    "weights": {
+      "sponsorship": 0.35,
+      "fit": 0.3,
+      "role_quality": 0
+    },
+    "apply_threshold": 0.3,
+    "consider_floor": 0.2,
+    "gate_zero": 0.05,
+    "soft_sponsorship_tiers": [
+      "likely",
+      "possible",
+      "unknown"
+    ]
+  },
+  "profile_needs_sponsorship": true,
+  "roles": [
+    {
+      "role_id": "stripe",
+      "company": "STRIPE INC",
+      "title": "Software Engineer (new grad)",
+      "composite": 0.252,
+      "recommendation": "Consider",
+      "machine_recommendation": "Consider",
+      "reason": "composite 0.252 in the Consider band [0.2, 0.3)",
+      "override": null,
+      "trace": {
+        "votes": [
+          {
+            "factor": "sponsorship",
+            "value": 0.9,
+            "weight": 0.35,
+            "contribution": 0.315,
+            "source": "your-input"
+          }
+        ],
+        "vote_sum": 0.315,
+        "gates": [
+          {
+            "factor": "liveness",
+            "multiplier": 1,
+            "source": "your-input"
+          },
+          {
+            "factor": "timeline",
+            "multiplier": 0.8,
+            "source": "your-input"
+          }
+        ],
+        "gate_product": 0.8,
+        "arithmetic": "(0.9·0.35) × 1 × 0.8 = 0.252"
+      }
+    },
+    {
+      "role_id": "figma",
+      "company": "FIGMA INC",
+      "title": "Software Engineer (new grad)",
+      "composite": 0.252,
+      "recommendation": "Consider",
+      "machine_recommendation": "Consider",
+      "reason": "composite 0.252 in the Consider band [0.2, 0.3)",
+      "override": null,
+      "trace": {
+        "votes": [
+          {
+            "factor": "sponsorship",
+            "value": 0.9,
+            "weight": 0.35,
+            "contribution": 0.315,
+            "source": "your-input"
+          }
+        ],
+        "vote_sum": 0.315,
+        "gates": [
+          {
+            "factor": "liveness",
+            "multiplier": 1,
+            "source": "your-input"
+          },
+          {
+            "factor": "timeline",
+            "multiplier": 0.8,
+            "source": "your-input"
+          }
+        ],
+        "gate_product": 0.8,
+        "arithmetic": "(0.9·0.35) × 1 × 0.8 = 0.252"
+      }
+    },
+    {
+      "role_id": "notion",
+      "company": "Notion",
+      "title": "Software Engineer (new grad)",
+      "composite": 0,
+      "recommendation": "Skip",
+      "machine_recommendation": "Skip",
+      "reason": "composite 0.000 < 0.2 — time is better spent elsewhere",
+      "override": null,
+      "trace": {
+        "votes": [],
+        "vote_sum": 0,
+        "gates": [
+          {
+            "factor": "liveness",
+            "multiplier": 1,
+            "source": "your-input"
+          },
+          {
+            "factor": "timeline",
+            "multiplier": 0.8,
+            "source": "your-input"
+          }
+        ],
+        "gate_product": 0.8,
+        "arithmetic": "(0) × 1 × 0.8 = 0.000"
+      }
+    },
+    {
+      "role_id": "datadog",
+      "company": "DATADOG INC",
+      "title": "Software Engineer (new grad)",
+      "composite": 0.252,
+      "recommendation": "Consider",
+      "machine_recommendation": "Consider",
+      "reason": "composite 0.252 in the Consider band [0.2, 0.3)",
+      "override": null,
+      "trace": {
+        "votes": [
+          {
+            "factor": "sponsorship",
+            "value": 0.9,
+            "weight": 0.35,
+            "contribution": 0.315,
+            "source": "your-input"
+          }
+        ],
+        "vote_sum": 0.315,
+        "gates": [
+          {
+            "factor": "liveness",
+            "multiplier": 1,
+            "source": "your-input"
+          },
+          {
+            "factor": "timeline",
+            "multiplier": 0.8,
+            "source": "your-input"
+          }
+        ],
+        "gate_product": 0.8,
+        "arithmetic": "(0.9·0.35) × 1 × 0.8 = 0.252"
+      }
+    },
+    {
+      "role_id": "klaviyo",
+      "company": "KLAVIYO INC",
+      "title": "Software Engineer (new grad)",
+      "composite": 0.168,
+      "recommendation": "Skip",
+      "machine_recommendation": "Skip",
+      "reason": "composite 0.168 < 0.2 — time is better spent elsewhere",
+      "override": null,
+      "trace": {
+        "votes": [
+          {
+            "factor": "sponsorship",
+            "value": 0.6,
+            "weight": 0.35,
+            "contribution": 0.21,
+            "source": "your-input"
+          }
+        ],
+        "vote_sum": 0.21,
+        "gates": [
+          {
+            "factor": "liveness",
+            "multiplier": 1,
+            "source": "your-input"
+          },
+          {
+            "factor": "timeline",
+            "multiplier": 0.8,
+            "source": "your-input"
+          }
+        ],
+        "gate_product": 0.8,
+        "arithmetic": "(0.6·0.35) × 1 × 0.8 = 0.168"
+      }
+    },
+    {
+      "role_id": "1uphealth",
+      "company": "1UPHEALTH INC",
+      "title": "Software Engineer (new grad)",
+      "composite": 0.168,
+      "recommendation": "Skip",
+      "machine_recommendation": "Skip",
+      "reason": "composite 0.168 < 0.2 — time is better spent elsewhere",
+      "override": null,
+      "trace": {
+        "votes": [
+          {
+            "factor": "sponsorship",
+            "value": 0.6,
+            "weight": 0.35,
+            "contribution": 0.21,
+            "source": "your-input"
+          }
+        ],
+        "vote_sum": 0.21,
+        "gates": [
+          {
+            "factor": "liveness",
+            "multiplier": 1,
+            "source": "your-input"
+          },
+          {
+            "factor": "timeline",
+            "multiplier": 0.8,
+            "source": "your-input"
+          }
+        ],
+        "gate_product": 0.8,
+        "arithmetic": "(0.6·0.35) × 1 × 0.8 = 0.168"
+      }
+    },
+    {
+      "role_id": "6sense",
+      "company": "6sense",
+      "title": "Software Engineer (new grad)",
+      "composite": 0,
+      "recommendation": "Skip",
+      "machine_recommendation": "Skip",
+      "reason": "composite 0.000 < 0.2 — time is better spent elsewhere",
+      "override": null,
+      "trace": {
+        "votes": [],
+        "vote_sum": 0,
+        "gates": [
+          {
+            "factor": "liveness",
+            "multiplier": 1,
+            "source": "your-input"
+          },
+          {
+            "factor": "timeline",
+            "multiplier": 0.8,
+            "source": "your-input"
+          }
+        ],
+        "gate_product": 0.8,
+        "arithmetic": "(0) × 1 × 0.8 = 0.000"
+      }
+    },
+    {
+      "role_id": "draftkings",
+      "company": "DRAFTKINGS INC",
+      "title": "Software Engineer (new grad)",
+      "composite": 0,
+      "recommendation": "Skip",
+      "machine_recommendation": "Skip",
+      "reason": "composite 0.000 < 0.2 — time is better spent elsewhere",
+      "override": null,
+      "trace": {
+        "votes": [],
+        "vote_sum": 0,
+        "gates": [
+          {
+            "factor": "liveness",
+            "multiplier": 1,
+            "source": "your-input"
+          },
+          {
+            "factor": "timeline",
+            "multiplier": 0.8,
+            "source": "your-input"
+          }
+        ],
+        "gate_product": 0.8,
+        "arithmetic": "(0) × 1 × 0.8 = 0.000"
+      }
+    },
+    {
+      "role_id": "hubspot",
+      "company": "HubSpot",
+      "title": "Software Engineer (new grad)",
+      "composite": 0,
+      "recommendation": "Skip",
+      "machine_recommendation": "Skip",
+      "reason": "composite 0.000 < 0.2 — time is better spent elsewhere",
+      "override": null,
+      "trace": {
+        "votes": [],
+        "vote_sum": 0,
+        "gates": [
+          {
+            "factor": "liveness",
+            "multiplier": 1,
+            "source": "your-input"
+          },
+          {
+            "factor": "timeline",
+            "multiplier": 0.8,
+            "source": "your-input"
+          }
+        ],
+        "gate_product": 0.8,
+        "arithmetic": "(0) × 1 × 0.8 = 0.000"
+      }
+    },
+    {
+      "role_id": "wayfair",
+      "company": "Wayfair",
+      "title": "Software Engineer (new grad)",
+      "composite": 0,
+      "recommendation": "Skip",
+      "machine_recommendation": "Skip",
+      "reason": "composite 0.000 < 0.2 — time is better spent elsewhere",
+      "override": null,
+      "trace": {
+        "votes": [],
+        "vote_sum": 0,
+        "gates": [
+          {
+            "factor": "liveness",
+            "multiplier": 1,
+            "source": "your-input"
+          },
+          {
+            "factor": "timeline",
+            "multiplier": 0.8,
+            "source": "your-input"
+          }
+        ],
+        "gate_product": 0.8,
+        "arithmetic": "(0) × 1 × 0.8 = 0.000"
+      }
+    },
+    {
+      "role_id": "braze",
+      "company": "BRAZE INC",
+      "title": "Software Engineer (new grad)",
+      "composite": 0.168,
+      "recommendation": "Skip",
+      "machine_recommendation": "Skip",
+      "reason": "composite 0.168 < 0.2 — time is better spent elsewhere",
+      "override": null,
+      "trace": {
+        "votes": [
+          {
+            "factor": "sponsorship",
+            "value": 0.6,
+            "weight": 0.35,
+            "contribution": 0.21,
+            "source": "your-input"
+          }
+        ],
+        "vote_sum": 0.21,
+        "gates": [
+          {
+            "factor": "liveness",
+            "multiplier": 1,
+            "source": "your-input"
+          },
+          {
+            "factor": "timeline",
+            "multiplier": 0.8,
+            "source": "your-input"
+          }
+        ],
+        "gate_product": 0.8,
+        "arithmetic": "(0.6·0.35) × 1 × 0.8 = 0.168"
+      }
+    },
+    {
+      "role_id": "mobilio",
+      "company": "MOBILIO LLC",
+      "title": "Software Engineer (new grad)",
+      "composite": 0,
+      "recommendation": "Skip",
+      "machine_recommendation": "Skip",
+      "reason": "composite 0.000 < 0.2 — time is better spent elsewhere",
+      "override": null,
+      "trace": {
+        "votes": [
+          {
+            "factor": "sponsorship",
+            "value": 0,
+            "weight": 0.35,
+            "contribution": 0,
+            "source": "your-input"
+          }
+        ],
+        "vote_sum": 0,
+        "gates": [
+          {
+            "factor": "liveness",
+            "multiplier": 1,
+            "source": "your-input"
+          },
+          {
+            "factor": "timeline",
+            "multiplier": 0.8,
+            "source": "your-input"
+          }
+        ],
+        "gate_product": 0.8,
+        "arithmetic": "(0·0.35) × 1 × 0.8 = 0.000"
+      }
+    }
+  ]
+}

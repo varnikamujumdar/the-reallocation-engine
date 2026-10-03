@@ -1,0 +1,237 @@
+[
+  {
+    "role_id": "stripe",
+    "company": "STRIPE INC",
+    "title": "Software Engineer (new grad)",
+    "sponsorship": {
+      "tier": "Proven",
+      "source": "your-input",
+      "basis": "tier rule (your-input) on 80-days CSV fields (record)",
+      "p": 0.9
+    },
+    "liveness": {
+      "factor": 1.0,
+      "source": "your-input",
+      "status": "UNCHECKED"
+    },
+    "timeline": {
+      "factor": 1.0,
+      "source": "your-input"
+    }
+  },
+  {
+    "role_id": "figma",
+    "company": "FIGMA INC",
+    "title": "Software Engineer (new grad)",
+    "sponsorship": {
+      "tier": "Proven",
+      "source": "your-input",
+      "basis": "tier rule (your-input) on 80-days CSV fields (record)",
+      "p": 0.9
+    },
+    "liveness": {
+      "factor": 1.0,
+      "source": "your-input",
+      "status": "UNCHECKED"
+    },
+    "timeline": {
+      "factor": 1.0,
+      "source": "your-input"
+    }
+  },
+  {
+    "role_id": "notion",
+    "company": "Notion",
+    "title": "Software Engineer (new grad)",
+    "sponsorship": {
+      "tier": "Unknown",
+      "source": "your-input",
+      "basis": "tier rule (your-input) on 80-days CSV fields (record)"
+    },
+    "liveness": {
+      "factor": 1.0,
+      "source": "your-input",
+      "status": "UNCHECKED"
+    },
+    "timeline": {
+      "factor": 1.0,
+      "source": "your-input"
+    }
+  },
+  {
+    "role_id": "datadog",
+    "company": "DATADOG INC",
+    "title": "Software Engineer (new grad)",
+    "sponsorship": {
+      "tier": "Proven",
+      "source": "your-input",
+      "basis": "tier rule (your-input) on 80-days CSV fields (record)",
+      "p": 0.9
+    },
+    "liveness": {
+      "factor": 1.0,
+      "source": "your-input",
+      "status": "UNCHECKED"
+    },
+    "timeline": {
+      "factor": 1.0,
+      "source": "your-input"
+    }
+  },
+  {
+    "role_id": "klaviyo",
+    "company": "KLAVIYO INC",
+    "title": "Software Engineer (new grad)",
+    "sponsorship": {
+      "tier": "Likely",
+      "source": "your-input",
+      "basis": "tier rule (your-input) on 80-days CSV fields (record)",
+      "p": 0.6
+    },
+    "liveness": {
+      "factor": 1.0,
+      "source": "your-input",
+      "status": "UNCHECKED"
+    },
+    "timeline": {
+      "factor": 1.0,
+      "source": "your-input"
+    }
+  },
+  {
+    "role_id": "1uphealth",
+    "company": "1UPHEALTH INC",
+    "title": "Software Engineer (new grad)",
+    "sponsorship": {
+      "tier": "Likely",
+      "source": "your-input",
+      "basis": "tier rule (your-input) on 80-days CSV fields (record)",
+      "p": 0.6
+    },
+    "liveness": {
+      "factor": 1.0,
+      "source": "your-input",
+      "status": "UNCHECKED"
+    },
+    "timeline": {
+      "factor": 1.0,
+      "source": "your-input"
+    }
+  },
+  {
+    "role_id": "6sense",
+    "company": "6sense",
+    "title": "Software Engineer (new grad)",
+    "sponsorship": {
+      "tier": "Unknown",
+      "source": "your-input",
+      "basis": "tier rule (your-input) on 80-days CSV fields (record)"
+    },
+    "liveness": {
+      "factor": 1.0,
+      "source": "your-input",
+      "status": "UNCHECKED"
+    },
+    "timeline": {
+      "factor": 1.0,
+      "source": "your-input"
+    }
+  },
+  {
+    "role_id": "draftkings",
+    "company": "DRAFTKINGS INC",
+    "title": "Software Engineer (new grad)",
+    "sponsorship": {
+      "tier": "Unknown",
+      "source": "your-input",
+      "basis": "tier rule (your-input) on 80-days CSV fields (record)"
+    },
+    "liveness": {
+      "factor": 1.0,
+      "source": "your-input",
+      "status": "UNCHECKED"
+    },
+    "timeline": {
+      "factor": 1.0,
+      "source": "your-input"
+    }
+  },
+  {
+    "role_id": "hubspot",
+    "company": "HubSpot",
+    "title": "Software Engineer (new grad)",
+    "sponsorship": {
+      "tier": "Unknown",
+      "source": "your-input",
+      "basis": "tier rule (your-input) on 80-days CSV fields (record)"
+    },
+    "liveness": {
+      "factor": 1.0,
+      "source": "your-input",
+      "status": "UNCHECKED"
+    },
+    "timeline": {
+      "factor": 1.0,
+      "source": "your-input"
+    }
+  },
+  {
+    "role_id": "wayfair",
+    "company": "Wayfair",
+    "title": "Software Engineer (new grad)",
+    "sponsorship": {
+      "tier": "Unknown",
+      "source": "your-input",
+      "basis": "tier rule (your-input) on 80-days CSV fields (record)"
+    },
+    "liveness": {
+      "factor": 1.0,
+      "source": "your-input",
+      "status": "UNCHECKED"
+    },
+    "timeline": {
+      "factor": 1.0,
+      "source": "your-input"
+    }
+  },
+  {
+    "role_id": "braze",
+    "company": "BRAZE INC",
+    "title": "Software Engineer (new grad)",
+    "sponsorship": {
+      "tier": "Likely",
+      "source": "your-input",
+      "basis": "tier rule (your-input) on 80-days CSV fields (record)",
+      "p": 0.6
+    },
+    "liveness": {
+      "factor": 1.0,
+      "source": "your-input",
+      "status": "UNCHECKED"
+    },
+    "timeline": {
+      "factor": 1.0,
+      "source": "your-input"
+    }
+  },
+  {
+    "role_id": "mobilio",
+    "company": "MOBILIO LLC",
+    "title": "Software Engineer (new grad)",
+    "sponsorship": {
+      "tier": "None",
+      "source": "your-input",
+      "basis": "tier rule (your-input) on 80-days CSV fields (record)",
+      "p": 0.0
+    },
+    "liveness": {
+      "factor": 1.0,
+      "source": "your-input",
+      "status": "UNCHECKED"
+    },
+    "timeline": {
+      "factor": 1.0,
+      "source": "your-input"
+    }
+  }
+]
