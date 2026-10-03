@@ -56,7 +56,7 @@ This is the honest record of how this assignment was actually done: what was tri
     - Some lines were stale ("has to be repeated", the list of uncited OPT numbers).
     - The clean-checkout run had been done by the AI, while the assignment says to run it yourself.
 
-    Response: corrected the wording and added a revision to the brief. The clean-checkout run by me is in progress (TEST-REPORT.md).
+    Response: corrected the wording and added a revision to the brief. Then I ran the clean-checkout commands myself on a fresh clone at `e084790`: 22 tests OK, the same Apply 3 · Consider 3 · Skip 6, 32 files changed (all mine), and a clean history privacy scan (TEST-REPORT.md §Clean-checkout run).
 
 ## Still unresolved
 
@@ -71,5 +71,5 @@ This is the honest record of how this assignment was actually done: what was tri
 - Run outputs: `course/2026fa/submissions/varnikamujumdar/runs/2026-10-03/`
 - Tests: `scripts/contrib/2026fa/varnikamujumdar-swe-newgrad-sponsors/test_sponsor_shortlist.py`
 - Break attempts and hand check: `WORKED-RUN.md` §Verification
-- Commits, in order: `3e8cbe8` setup log + change brief · `b3db05f` recipe + card · `19f5da0` prototype, tests, fixtures · `bbb7ddf` run outputs · `78328fe` run log · `052820b` write-ups. A final commit adds the clean-checkout results (see `git log`).
+- Commits, in order: `3e8cbe8` setup log + change brief · `b3db05f` recipe + card · `19f5da0` prototype, tests, fixtures · `bbb7ddf` run outputs · `78328fe` run log · `052820b` write-ups. `7a95854` clean-checkout results (AI run) · `e084790` second-review wording fixes · a final commit adds my own clean-checkout run (see `git log`).
 - Clean-checkout run and branch-history PII scan: `TEST-REPORT.md` §Clean-checkout run
