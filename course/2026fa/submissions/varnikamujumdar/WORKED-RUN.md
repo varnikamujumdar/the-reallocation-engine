@@ -144,7 +144,7 @@ Two of three "Apply" companies had no new-grad engineering posting open that day
 
 **What worked**
 - Unknown stayed unknown. Five companies came back with no p value and a label saying absence is not a "no".
-- Every failure case halted with exit 2 and wrote nothing.
+- No failure case invented a value. The data cases (company missing, blank visa columns, senior-only history, zero approvals) came back as Unknown, Likely or None rows, and the input cases (bad date, OPT window closed, filing date outside the window, damaged CSV) halted with exit 2 and wrote nothing.
 - The existing scorer was used unchanged.
 
 **What the recipe or prototype got wrong or missed**
@@ -183,6 +183,7 @@ Add a human-confirmed alias file (`fixtures/aliases.json`, mapping "Notion" → 
 - Any persona other than Bella, and any non-SWE role.
 - Very long target lists (the whole CSV) or non-ASCII company names.
 - Whether the 90 / 60 / 90-day OPT constants are correct. Not checked against USCIS.
+- Running without `node` installed: the scorer call would raise a Python error instead of a clean exit 3, and `roles.json` is written before the scorer runs, so a failed run leaves that one file behind.
 - A run on Python 3.12 (CI's version); only 3.9.6 was used here.
 - (Since done: a run from a clean clone of the pushed branch at `052820b` gave the same results; see TEST-REPORT.md.)
 

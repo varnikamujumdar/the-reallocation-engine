@@ -2,7 +2,7 @@
 
 ## Executive summary
 
-This report records whether the tool actually runs and whether it breaks safely. Before anything was built, the repo's own health checks failed on a fresh laptop for three setup reasons, all fixed with one install command each. After the build, the checks pass, the tool runs on the real data, all 22 offline tests pass, and every named failure case stops with a clear message without writing anything. Everything was also re-run from a fresh clone of the pushed branch, with the same results, and the branch-history privacy scan that CI runs came back clean.
+This report records whether the tool actually runs and whether it breaks safely. Before anything was built, the repo's own health checks failed on a fresh laptop for three setup reasons, all fixed with one install command each. After the build, the checks pass, the tool runs on the real data, all 22 offline tests pass, and every named failure case is handled without inventing a value: missing or blank visa data comes back as "unknown", and bad dates, an impossible OPT filing date, or a damaged data file stop the run with a clear message before anything is written. Everything was also re-run from a fresh clone of the pushed branch, with the same results, and the branch-history privacy scan that CI runs came back clean.
 
 ## Toolchain baseline
 

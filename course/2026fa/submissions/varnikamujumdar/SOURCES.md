@@ -25,7 +25,7 @@ This page credits everything this submission is built on: the course repository 
 
 ## Regulatory facts used as assumptions (not yet verified against a primary source)
 
-- The 60-day window after program end to start post-completion OPT, and the 90-day unemployment limit on post-completion OPT: 8 CFR 214.2(f) and USCIS guidance. Typed in as your-input. **Not checked against the primary text for this submission.**
+- Filing for post-completion OPT from 90 days before program end, the 60-day window after program end, and the 90-day unemployment limit on post-completion OPT: 8 CFR 214.2(f) and USCIS guidance. Typed in as your-input. **Not checked against the primary text for this submission.**
 
 ## Tools
 
@@ -53,7 +53,7 @@ This page credits everything this submission is built on: the course repository 
 - I had the AI-attribution note removed from the brief and moved the disclosure here and to FRICTIONAL.md.
 - I chose to skip running the liveness gate myself.
 - I asked for a full check against the assignment before committing.
-- I do all git commits, pushes, and the PR myself; the AI was told not to touch git.
+- I did all git commits, pushes, and the PR myself; the AI made no git changes (it only ran read-only git commands for the clean-checkout check).
 - I re-ran the offline tests and the documented sample command myself on 2026-10-03, before the review fixes, and got the same results as the AI's runs (16 tests OK; Apply 3 · Consider 3 · Skip 6). The code changed after that, so after the review fixes I re-ran on the final code: the test suite (22 tests OK), the sample command (Apply 3 · Consider 3 · Skip 6), and the late-filing break attempt, which halted with the expected filing-window error.
 
 **Collaborators:** none.

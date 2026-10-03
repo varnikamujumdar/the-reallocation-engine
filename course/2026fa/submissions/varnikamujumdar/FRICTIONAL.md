@@ -19,9 +19,9 @@ This is the honest record of how this assignment was actually done: what was tri
 | Build plan | **approved** it | wrote it |
 | Prototype, tests, fixtures, recipe, card, README | reviewed | wrote |
 | Target company list | accepted | picked the 12 names **after** browsing the CSV, so the mix of outcomes was partly known in advance |
-| JUSTIFICATION, WORKED-RUN, run log, this file, SOURCES | reviewing | drafted |
+| JUSTIFICATION, WORKED-RUN, TEST-REPORT, run log, this file, SOURCES | reviewed | drafted |
 | Pre-commit check | **asked** for a full check against the assignment before committing | ran mechanical checks and sent an independent reviewer agent; fixed its findings (item 14) |
-| git add / commit / push / PR | doing it myself | told not to touch git, and didn't |
+| git add / commit / push / PR | did it myself | told not to make any git change, and didn't; it only ran read-only git commands (`git clone` into a scratch folder, `git diff --stat`, `git log`) for the clean-checkout check |
 
 ## Attempts, expectations, what happened, response
 
@@ -48,12 +48,20 @@ This is the honest record of how this assignment was actually done: what was tri
     - The persona shared my surname.
     - Several counts were off (302 vs 301; the number of failing tests).
 
-    Response: fixed the code (filing-window check, label, output folder, exit-3 test), added break fixtures so every break command can be pasted word for word, renamed the persona to "Bella", and corrected the documents. Tests went from 16 to 22. **Not fixed:** the scorer's "gates healthy" wording is in a file outside my namespace, so it's documented instead. Because the code changed, my earlier re-run no longer counts for the attestation and has to be repeated.
+    Response: fixed the code (filing-window check, label, output folder, exit-3 test), added break fixtures so every break command can be pasted word for word, renamed the persona to "Bella", and corrected the documents. Tests went from 16 to 22. **Not fixed:** the scorer's "gates healthy" wording is in a file outside my namespace, so it's documented instead. Because the code changed, my earlier re-run no longer counted for the attestation, so I repeated it on the final code (see WORKED-RUN.md §Attestation).
+
+15. **Second independent review, after the first push.** I asked for the whole assignment to be reviewed again. It confirmed the earlier fixes held, and found wording problems:
+    - Two documents claimed every failure case "halts", but F1, F2, F3 and F5 don't halt; they produce Unknown, Likely or None rows.
+    - The brief's "1 row has 0 approvals" is true only among the 519 software sponsors; the whole CSV has 5.
+    - Some lines were stale ("has to be repeated", the list of uncited OPT numbers).
+    - The clean-checkout run had been done by the AI, while the assignment says to run it yourself.
+
+    Response: corrected the wording and added a revision to the brief. The clean-checkout run by me is in progress (TEST-REPORT.md).
 
 ## Still unresolved
 
 - Which fiscal years the CSV's H-1B counts cover.
-- Whether the 60-day and 90-day OPT rules as typed are exactly right (not checked against USCIS).
+- Whether the OPT numbers as typed are exactly right: filing from 90 days before program end, the 60-day window after it, and the 90-day unemployment limit (not checked against USCIS).
 - How to tell entry-level titles apart from senior ones better than a word list.
 - Whether CI on Python 3.12 behaves the same as my 3.9.6.
 

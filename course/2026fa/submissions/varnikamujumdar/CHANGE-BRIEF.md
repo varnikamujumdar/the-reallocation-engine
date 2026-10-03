@@ -107,3 +107,7 @@ What I checked in the CSV before planning (2026-10-03, by script):
 - **Count correction (§2).** "302 of those list a software title without a senior/staff/lead/manager marker" came from a quick check before the build. With the prototype's actual senior-title rule, the count is **301**. The original line is kept as written.
 - **New G1 check.** The review found the first build accepted an OPT filing date outside the filing window (e.g. 2027-05-01) and still said Apply. G1 now also halts when the filing date falls outside 90 days before to 60 days after program end. These numbers are your-input until cited (recipe TODO 2).
 - **Label correction.** The sponsorship p (0.9 / 0.6 / 0.0) was sent to the scorer labeled `record`. Because it comes from my rule, it is now labeled `your-input`.
+
+### 2026-10-03 — after a second review
+
+- **Count correction (§2).** "1 row (MOBILIO LLC) has 0 approvals" is true only among the 519 sponsors that list a software title. In the whole CSV, 5 rows have 0 approvals. The original line is kept as written.
