@@ -1,0 +1,21 @@
+{
+  "_note": "BREAK FIXTURE (fictional): run date is after the OPT start window and OPT was never filed.",
+  "name": "Bella",
+  "email": "bella@example.com",
+  "visa": "F-1 student, OPT not yet filed",
+  "degree": "MS Computer Science (STEM-designated)",
+  "target_role": "Software Engineer, new grad",
+  "soc": "15-1252",
+  "needs_sponsorship": true,
+  "timeline": {
+    "as_of": "2027-06-01",
+    "program_end": "2026-12-23",
+    "opt_requested_start": "2026-12-24",
+    "opt_filed": null,
+    "ead_wait_days": 90,
+    "hiring_lag_days": 56,
+    "opt_filing_window_before_days": 90,
+    "opt_start_window_days": 60,
+    "unemployment_limit_days": 90
+  }
+}

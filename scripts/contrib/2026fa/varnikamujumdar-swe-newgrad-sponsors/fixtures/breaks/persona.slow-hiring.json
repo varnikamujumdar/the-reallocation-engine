@@ -1,0 +1,21 @@
+{
+  "_note": "BREAK FIXTURE (fictional): NOT an error: hiring lag 120 days instead of 56, to show how sensitive the result is.",
+  "name": "Bella",
+  "email": "bella@example.com",
+  "visa": "F-1 student, OPT not yet filed",
+  "degree": "MS Computer Science (STEM-designated)",
+  "target_role": "Software Engineer, new grad",
+  "soc": "15-1252",
+  "needs_sponsorship": true,
+  "timeline": {
+    "as_of": "2026-10-03",
+    "program_end": "2026-12-23",
+    "opt_requested_start": "2026-12-24",
+    "opt_filed": "2026-10-15",
+    "ead_wait_days": 90,
+    "hiring_lag_days": 120,
+    "opt_filing_window_before_days": 90,
+    "opt_start_window_days": 60,
+    "unemployment_limit_days": 90
+  }
+}

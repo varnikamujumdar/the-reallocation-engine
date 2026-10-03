@@ -1,0 +1,8 @@
+company_name,industry,website,city,state,zip_code,phone,year_incorporated,company_age_years,executive_officers,board_directors,total_funding,latest_funding_amount,latest_funding_stage,latest_funding_date,Total Approvals,Total Denials,Approval_Rate,median_salary_offered,top_job_titles_sponsored
+ALPHA SOFTWARE INC,Computers,alpha.example.com,BOSTON,MA,02110,,,,,,5000000.0,5000000.0,Series A,2025-03-01,40.0,1.0,97.5609756097561,150000.0,"['Software Engineer', 'Senior Software Engineer']"
+BETA SENIOR LABS LLC,Computers,beta.example.com,BOSTON,MA,02110,,,,,,8000000.0,8000000.0,Series B,2024-06-01,25.0,0.0,100.0,190000.0,"['Senior Software Engineer', 'Staff Software Engineer']"
+GAMMA BLANK CORP,Computers,gamma.example.com,NEW YORK,NY,10001,,,,,,2000000.0,2000000.0,Seed,2025-01-15,,,,,
+DELTA ZERO LLC,Computers,delta.example.com,AUSTIN,TX,73301,,,,,,1000000.0,1000000.0,Seed,2023-02-01,0.0,2.0,0.0,,['Software Engineer']
+EPSILON SMALL INC,Computers,epsilon.example.com,SEATTLE,WA,98101,,,,,,3000000.0,3000000.0,Seed,2024-09-01,3.0,0.0,100.0,120000.0,['Software Engineer']
+ZETA HEALTH INC,Health,zeta.example.com,BOSTON,MA,02110,,,,,,9000000.0,9000000.0,Series B,2025-05-01,15.0,0.0,100.0,140000.0,"['Data Analyst']"
+ZETA HEALTHCARE INC,Health,zetahc.example.com,BOSTON,MA,02110,,,,,,9000000.0,9000000.0,Series B,2025-05-01,,,,,
